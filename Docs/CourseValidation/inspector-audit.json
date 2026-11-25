@@ -1,0 +1,162 @@
+{
+  "unity": "6000.3.9f1",
+  "activeBuildTarget": "Android",
+  "android": {
+    "initializedOnStart": true,
+    "loaders": [
+      "OpenXRLoader"
+    ],
+    "features": [
+      "MetaQuestFeature",
+      "MetaQuestTouchPlusControllerProfile",
+      "MetaQuestTouchProControllerProfile",
+      "OculusTouchControllerProfile"
+    ],
+    "minSdk": "AndroidApiLevel29",
+    "architectures": "ARM64",
+    "graphics": [
+      "Vulkan"
+    ]
+  },
+  "scenes": [
+    {
+      "scene": "Assets/Scenes/01_Grab_Complete.unity",
+      "camera": "Main Camera",
+      "trackingOrigin": "Floor",
+      "input": "Assets/Samples/XR Interaction Toolkit/3.3.1/Starter Assets/XRI Default Input Actions.inputactions",
+      "placement": {
+        "distance": 0.45,
+        "belowEyes": 0.35
+      },
+      "movement": "VelocityTracking",
+      "throwOnDetach": false,
+      "forceGravityOnDetach": false,
+      "throwSmoothingDuration": 0.25,
+      "throwVelocityScale": 1.0,
+      "throwAngularVelocityScale": 1.0,
+      "useDynamicAttach": true,
+      "attachEaseInTime": 0.15,
+      "score": null,
+      "controls": null,
+      "texts": null
+    },
+    {
+      "scene": "Assets/Scenes/02_Throw.unity",
+      "camera": "Main Camera",
+      "trackingOrigin": "Floor",
+      "input": "Assets/Samples/XR Interaction Toolkit/3.3.1/Starter Assets/XRI Default Input Actions.inputactions",
+      "placement": {
+        "distance": 0.45,
+        "belowEyes": 0.35
+      },
+      "movement": "VelocityTracking",
+      "throwOnDetach": true,
+      "forceGravityOnDetach": true,
+      "throwSmoothingDuration": 0.25,
+      "throwVelocityScale": 1.0,
+      "throwAngularVelocityScale": 1.0,
+      "useDynamicAttach": true,
+      "attachEaseInTime": 0.15,
+      "score": null,
+      "controls": null,
+      "texts": null
+    },
+    {
+      "scene": "Assets/Scenes/03_Target.unity",
+      "camera": "Main Camera",
+      "trackingOrigin": "Floor",
+      "input": "Assets/Samples/XR Interaction Toolkit/3.3.1/Starter Assets/XRI Default Input Actions.inputactions",
+      "placement": {
+        "distance": 0.45,
+        "belowEyes": 0.35
+      },
+      "movement": "VelocityTracking",
+      "throwOnDetach": true,
+      "forceGravityOnDetach": true,
+      "throwSmoothingDuration": 0.25,
+      "throwVelocityScale": 1.0,
+      "throwAngularVelocityScale": 1.0,
+      "useDynamicAttach": true,
+      "attachEaseInTime": 0.15,
+      "score": null,
+      "controls": null,
+      "texts": null
+    },
+    {
+      "scene": "Assets/Scenes/04_Score.unity",
+      "camera": "Main Camera",
+      "trackingOrigin": "Floor",
+      "input": "Assets/Samples/XR Interaction Toolkit/3.3.1/Starter Assets/XRI Default Input Actions.inputactions",
+      "placement": {
+        "distance": 0.45,
+        "belowEyes": 0.35
+      },
+      "movement": "VelocityTracking",
+      "throwOnDetach": true,
+      "forceGravityOnDetach": true,
+      "throwSmoothingDuration": 0.25,
+      "throwVelocityScale": 1.0,
+      "throwAngularVelocityScale": 1.0,
+      "useDynamicAttach": true,
+      "attachEaseInTime": 0.15,
+      "score": {
+        "centerTolerance": 0.075,
+        "minHeight": 0.1,
+        "maxHeight": 0.18,
+        "uprightDot": 0.95,
+        "maxSpeed": 0.15,
+        "maxSpin": 0.5,
+        "settleSeconds": 0.5
+      },
+      "controls": null,
+      "texts": null
+    },
+    {
+      "scene": "Assets/Scenes/05_RingToss.unity",
+      "camera": "Main Camera",
+      "trackingOrigin": "Floor",
+      "input": "Assets/Samples/XR Interaction Toolkit/3.3.1/Starter Assets/XRI Default Input Actions.inputactions",
+      "placement": {
+        "distance": 0.45,
+        "belowEyes": 0.35
+      },
+      "movement": "VelocityTracking",
+      "throwOnDetach": true,
+      "forceGravityOnDetach": true,
+      "throwSmoothingDuration": 0.25,
+      "throwVelocityScale": 1.0,
+      "throwAngularVelocityScale": 1.0,
+      "useDynamicAttach": true,
+      "attachEaseInTime": 0.15,
+      "score": {
+        "centerTolerance": 0.075,
+        "minHeight": 0.1,
+        "maxHeight": 0.18,
+        "uprightDot": 0.95,
+        "maxSpeed": 0.15,
+        "maxSpin": 0.5,
+        "settleSeconds": 0.5
+      },
+      "controls": {
+        "distance": 0.45,
+        "belowEyes": 0.35
+      },
+      "texts": [
+        {
+          "name": "ScoreText",
+          "text": "Score: 0",
+          "fontSize": 48.0,
+          "font": "LiberationSans SDF",
+          "raycastTarget": false
+        },
+        {
+          "name": "ControlsText",
+          "text": "A: Return   B: New Player",
+          "fontSize": 24.0,
+          "font": "LiberationSans SDF",
+          "raycastTarget": false
+        }
+      ]
+    }
+  ]
+}

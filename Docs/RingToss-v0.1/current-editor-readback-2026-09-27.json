@@ -1,0 +1,129 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var ring=GameObject.Find(\"Ring\");var g=ring.GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();var b=ring.GetComponent<Rigidbody>();var root=GameObject.Find(\"XR Origin\");var origin=root.GetComponent<Unity.XR.CoreUtils.XROrigin>();return new {unity=Application.unityVersion,playing=EditorApplication.isPlaying,packages=UnityEditor.PackageManager.PackageInfo.GetAllRegisteredPackages().Where(p=>p.name.StartsWith(\"com.unity.xr.\") || p.name==\"com.unity.inputsystem\" || p.name==\"com.unity.render-pipelines.universal\").Select(p=>new{p.name,p.version}).ToArray(),position=ring.transform.position.ToString(),components=ring.GetComponents<Component>().Select(c=>c.GetType().Name).ToArray(),grab=new{select=g.selectMode.ToString(),movement=g.movementType.ToString(),g.trackPosition,g.trackRotation,g.useDynamicAttach,g.attachEaseInTime,g.throwOnDetach,g.throwSmoothingDuration,g.throwVelocityScale,g.throwAngularVelocityScale,g.forceGravityOnDetach,g.addDefaultGrabTransformers,transformers=g.startingSingleGrabTransformers.Select(t=>t.GetType().Name).ToArray(),colliders=g.colliders.Count},body=new{b.mass,b.useGravity,b.isKinematic,interpolation=b.interpolation.ToString(),collision=b.collisionDetectionMode.ToString()},origin=new{mode=origin.RequestedTrackingOriginMode.ToString(),origin.CameraYOffset},hands=root.GetComponentsInChildren<UnityEngine.XR.Interaction.Toolkit.Interactors.XRDirectInteractor>().Select(h=>new{h.name,trigger=h.selectActionTrigger.ToString(),source=h.selectInput.inputSourceMode.ToString(),select=h.selectInput.inputActionReferencePerformed.name,value=h.selectInput.inputActionReferenceValue.name,h.improveAccuracyWithSphereCollider,radius=h.GetComponent<SphereCollider>().radius}).ToArray()};"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "unity": "6000.3.9f1",
+        "playing": false,
+        "packages": [
+          {
+            "name": "com.unity.inputsystem",
+            "version": "1.18.0"
+          },
+          {
+            "name": "com.unity.render-pipelines.universal",
+            "version": "17.3.0"
+          },
+          {
+            "name": "com.unity.xr.androidxr-openxr",
+            "version": "1.1.0"
+          },
+          {
+            "name": "com.unity.xr.arfoundation",
+            "version": "6.3.2"
+          },
+          {
+            "name": "com.unity.xr.core-utils",
+            "version": "2.5.3"
+          },
+          {
+            "name": "com.unity.xr.hands",
+            "version": "1.7.3"
+          },
+          {
+            "name": "com.unity.xr.interaction.toolkit",
+            "version": "3.3.1"
+          },
+          {
+            "name": "com.unity.xr.management",
+            "version": "4.5.3"
+          },
+          {
+            "name": "com.unity.xr.openxr",
+            "version": "1.16.1"
+          },
+          {
+            "name": "com.unity.xr.legacyinputhelpers",
+            "version": "2.1.13"
+          }
+        ],
+        "position": "(0.00, 1.25, 0.45)",
+        "components": [
+          "Transform",
+          "MeshFilter",
+          "MeshRenderer",
+          "Rigidbody",
+          "XRGrabInteractable",
+          "XRGeneralGrabTransformer",
+          "RingInitialPlacement",
+          "RingReturnToPlayer"
+        ],
+        "grab": {
+          "select": "Single",
+          "movement": "VelocityTracking",
+          "trackPosition": true,
+          "trackRotation": true,
+          "useDynamicAttach": true,
+          "attachEaseInTime": 0.15,
+          "throwOnDetach": true,
+          "throwSmoothingDuration": 0.25,
+          "throwVelocityScale": 1,
+          "throwAngularVelocityScale": 1,
+          "forceGravityOnDetach": true,
+          "addDefaultGrabTransformers": false,
+          "transformers": [
+            "XRGeneralGrabTransformer"
+          ],
+          "colliders": 16
+        },
+        "body": {
+          "mass": 0.15,
+          "useGravity": false,
+          "isKinematic": false,
+          "interpolation": "Interpolate",
+          "collision": "ContinuousDynamic"
+        },
+        "origin": {
+          "mode": "Floor",
+          "CameraYOffset": 1.6
+        },
+        "hands": [
+          {
+            "name": "Left Controller",
+            "trigger": "StateChange",
+            "source": "InputActionReference",
+            "select": "XRI Left Interaction/Select",
+            "value": "XRI Left Interaction/Select Value",
+            "improveAccuracyWithSphereCollider": true,
+            "radius": 0.08
+          },
+          {
+            "name": "Right Controller",
+            "trigger": "StateChange",
+            "source": "InputActionReference",
+            "select": "XRI Right Interaction/Select",
+            "value": "XRI Right Interaction/Select Value",
+            "improveAccuracyWithSphereCollider": true,
+            "radius": 0.08
+          }
+        ]
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\25111103\\Documents\\Unity_Project\\VR_RingToss_Tutorial"
+    },
+    "success": true
+  },
+  "errors": [],
+  "warnings": []
+}

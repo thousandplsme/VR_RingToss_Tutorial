@@ -1,0 +1,39 @@
+{
+  "success": false,
+  "failure": "System.Exception: COURSE_TEST_FAILED: reject_tilted\r\n  at CourseTests.Assert (System.String name, System.Boolean ok, System.Object detail) [0x00026] in C:\\Users\\25111103\\Documents\\Unity_Project\\VR_RingToss_Tutorial\\CourseValidation\\VR_RingToss_FromScratch\\Assets\\Editor\\CourseTests.cs:54 \r\n  at CourseTests.PrepareAndTest () [0x00312] in C:\\Users\\25111103\\Documents\\Unity_Project\\VR_RingToss_Tutorial\\CourseValidation\\VR_RingToss_FromScratch\\Assets\\Editor\\CourseTests.cs:149 \r\n  at CourseTests.Tick () [0x000a4] in C:\\Users\\25111103\\Documents\\Unity_Project\\VR_RingToss_Tutorial\\CourseValidation\\VR_RingToss_FromScratch\\Assets\\Editor\\CourseTests.cs:84 ",
+  "unity": "6000.3.9f1",
+  "frames": 8,
+  "tests": [
+    {
+      "name": "settling_delay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "interruption_resets_timer",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reject_outside",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reject_too_high",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reject_tilted",
+      "passed": false,
+      "detail": null
+    }
+  ],
+  "errors": [
+    "No graphic device is available to initialize the view.",
+    "No graphic device is available to show the window.",
+    "No graphic device is available to initialize the view."
+  ],
+  "scope": "Editor Play + isolated PhysX; Quest tracking, physical buttons and visual readability not verified"
+}

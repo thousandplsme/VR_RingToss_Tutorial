@@ -1,0 +1,83 @@
+{
+  "dateJst": "2026-10-23",
+  "status": "implemented_and_mechanically_verified",
+  "baselineCommit": "4eec99b",
+  "changes": [
+    "Versioned tutorial and independent validation project without including the 13 pre-existing tracked changes",
+    "Added one developer verification entry point with target/process/dirty-state guards and run-specific evidence",
+    "Enforced chapter component presence and added score boundaries, return grace, virtual A/B and placement tests",
+    "Added source/Sources/NotionSnapshot and audit-copy consistency checks; gameplay code unchanged",
+    "Merged saved-scene inspection into one pass and enabled test-suite selection and failure collection"
+  ],
+  "comparison": {
+    "chapterInspectionLoads": {
+      "before": 10,
+      "after": 5,
+      "excludesRestoringInitialSceneSetup": true
+    },
+    "playAssertions": {
+      "before": 25,
+      "after": 47
+    },
+    "developerToolRegressionTests": 16,
+    "auditTotalSeconds": 27.737,
+    "auditInspectionSeconds": 2.6728836,
+    "allPlayTotalSeconds": 38.686,
+    "buildTotalSeconds": 95.863,
+    "buildPipelineSeconds": 67.4844334,
+    "beforeWallTime": null,
+    "timeReductionPercent": null,
+    "timingNote": "Single successful runs; audit timings are from the standalone audit. No timing reduction claim."
+  },
+  "verification": {
+    "staticChecks": 26,
+    "playPassed": 47,
+    "playErrors": [],
+    "playSkipped": 0,
+    "chapterAuditPassed": true,
+    "protectedBaselineFiles": 1780,
+    "protectedFileDifferences": [],
+    "androidBuild": {
+      "result": "Succeeded",
+      "errors": 0,
+      "warnings": 5,
+      "apkBytes": 45189509,
+      "sha256": "C9B981BE486428B15A41735DE9613921F52947C5B76C66B6DEB3ACD17E43D688",
+      "deviceTested": false
+    },
+    "previousApkUnchanged": true
+  },
+  "reports": {
+    "play_all": "runs/20261023-092219-ecabf055/result.json",
+    "play_input": "runs/20261023-091706-896e2436/result.json",
+    "build": "runs/20261023-092010-23a87da3/result.json",
+    "audit": "runs/20261023-091127-5ef4a17b/result.json"
+  },
+  "finalDeveloperCodeHashes": {
+    "CourseValidation/VRRT/Assets/Editor/CourseAudit.cs": "B5DFCAB3463822F1C99F850A06CBD04C245D4C563415784A31C20BC3ACDBD6CF",
+    "CourseValidation/VRRT/Assets/Editor/CourseAudit.cs.meta": "94C2FADE134DABC12D15DF1528271FE45D1B63412A96E48BCB3C1418A9A9FAAC",
+    "CourseValidation/VRRT/Assets/Editor/CourseBuild.cs": "1D10EF6B7A9FDDDB9CFE5F0D00E0F35B974A83B4C254A5EA78ACFFDAD31628BA",
+    "CourseValidation/VRRT/Assets/Editor/CourseBuild.cs.meta": "76B251F05DE92366B3A0E200D54C46F95904512E0D368DA2534A5DA906A6E2C7",
+    "CourseValidation/VRRT/Assets/Editor/CourseImport.cs": "2E2619A4D2CF7FDF27521B746DD95D97D1D7A8A2A977A143D5CF36ABD15E39BF",
+    "CourseValidation/VRRT/Assets/Editor/CourseImport.cs.meta": "2BFD809CD3E413EA89EC87120F76CC41063A8457832A3F87E841CF8F71892B4B",
+    "CourseValidation/VRRT/Assets/Editor/CoursePackageInstaller.cs": "4655F19A138645D6BB9E63EAFF037CBCB8468DEC0562986D60B7A90C66C7CB2E",
+    "CourseValidation/VRRT/Assets/Editor/CoursePackageInstaller.cs.meta": "368E7C5DEDC8C608C4DE9B088E54E22FB2BB813BD9F2313B5F5B9EB6ED6EE889",
+    "CourseValidation/VRRT/Assets/Editor/CourseScenes.cs": "CAB66B05A73EEE696E785E9B3CCF33F4CB94D0F8F4E3DC2348F31031750336A3",
+    "CourseValidation/VRRT/Assets/Editor/CourseScenes.cs.meta": "4E15EDED3578E116939801FC392CAC3B61B0D8CF1E68CA67A4FD7B0FF3008C97",
+    "CourseValidation/VRRT/Assets/Editor/CourseTestCases.cs": "42D7889553155BC54DAEF8BB85732828C27992F9ED3A3C78934EA285B6D1D8A5",
+    "CourseValidation/VRRT/Assets/Editor/CourseTestCases.cs.meta": "B1A217CB7218A8DDBB97E247025746F05F3A680E76D70B5389BE61BA24871D79",
+    "CourseValidation/VRRT/Assets/Editor/CourseTests.cs": "C4FB25955F15BCB7BD25768AA1B325C68A3DDB584E9C553B7E6C72A365697568",
+    "CourseValidation/VRRT/Assets/Editor/CourseTests.cs.meta": "9DF090DF5C6DEC5058AB57403DA0E721E5AF786F6A535A1E23B8B9FA16B0D83A",
+    "CourseValidation/VRRT/Assets/Editor/CourseValidationRunner.cs": "FB7A3FFC7ADDB64DED55BC97D316AC3CE8F78064D7A829DBE6A9D9E86A12E8AD",
+    "CourseValidation/VRRT/Assets/Editor/CourseValidationRunner.cs.meta": "6EB24100F5C3150395B9B41F9D59325CB0FEB582F6706A999937F8322F04DF33",
+    "Docs/tools/test_verify_project.py": "1237CDCF95E754BF30CA586B414F2F4A613AC5DA48B067CF8D4F0F51DF5098C6",
+    "Docs/tools/verify_project.py": "09A16A0E32F5A2E722777BE98AEE8FAEBFA202270075969494768E3A20DB15D7"
+  },
+  "pendingHumanChecks": [
+    "Actual HMD tracking and placement after 0.25 seconds of continuous isTracked; no pose-stillness requirement",
+    "Physical left/right Grip, A/B, holds/repeats, 10 throws, loss/recovery of tracking",
+    "Throw feel, scoring acceptance, text readability, device performance, Quest Pro/3S compatibility",
+    "Another club member reproducing the course without author assistance",
+    "Interactive Editor menu use, cancellation and returning to the original scene (batch paths passed; interactive behavior reviewed in code only)"
+  ]
+}

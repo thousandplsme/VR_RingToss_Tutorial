@@ -1,0 +1,139 @@
+{
+  "success": true,
+  "failure": null,
+  "unity": "6000.3.9f1",
+  "frames": 13,
+  "tests": [
+    {
+      "name": "settling_delay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "interruption_resets_timer",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reject_outside",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reject_too_high",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reject_tilted",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reject_moving_fast",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reject_spinning",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical_drop_through_hole_scores_once",
+      "passed": true,
+      "detail": {
+        "Score": 1,
+        "position": "(0.00, 0.13, 1.50)",
+        "speed": 0.0
+      }
+    },
+    {
+      "name": "resting_ring_no_duplicate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical_miss_does_not_score",
+      "passed": true,
+      "detail": "(0.40, 0.08, 1.50)"
+    },
+    {
+      "name": "floor_collision",
+      "passed": true,
+      "detail": 0.07582807
+    },
+    {
+      "name": "xr_selection_established",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held_ring_no_score",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held_ring_cannot_return",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "release_frame_cannot_return",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unheld_still_ring_scores",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "return_after_release_grace",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "return_position",
+      "passed": true,
+      "detail": "(0.00, 1.25, 0.45)"
+    },
+    {
+      "name": "return_stops_motion",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "next_throw_can_score",
+      "passed": true,
+      "detail": 2
+    },
+    {
+      "name": "score_display_updates_in_play",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "new_player_resets_score",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "vertical_head_rejects_return",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no_runtime_errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "play_frames_advanced",
+      "passed": true,
+      "detail": 13
+    }
+  ],
+  "errors": [],
+  "scope": "Editor Play + isolated PhysX; Quest tracking, physical buttons and visual readability not verified"
+}

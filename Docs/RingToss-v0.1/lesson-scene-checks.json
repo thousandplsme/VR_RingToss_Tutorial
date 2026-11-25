@@ -1,0 +1,32 @@
+[
+  {
+    "path": "Assets/RingTossTutorial/Scenes/Lessons/01_Grab_Starter.unity",
+    "passed": true,
+    "enabled": false,
+    "throwOnDetach": false,
+    "forceGravityOnDetach": false,
+    "missingScripts": 0,
+    "colliders": 16,
+    "saved": true
+  },
+  {
+    "path": "Assets/RingTossTutorial/Scenes/Lessons/01_Grab_Complete.unity",
+    "passed": true,
+    "enabled": true,
+    "throwOnDetach": false,
+    "forceGravityOnDetach": false,
+    "missingScripts": 0,
+    "colliders": 16,
+    "saved": true
+  },
+  {
+    "path": "Assets/RingTossTutorial/Scenes/RingToss_v0_1.unity",
+    "passed": true,
+    "enabled": true,
+    "throwOnDetach": true,
+    "forceGravityOnDetach": true,
+    "missingScripts": 0,
+    "colliders": 16,
+    "saved": true
+  }
+]

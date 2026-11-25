@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/05_RingToss.unity
+    guid: d72a580df62cec44684eb006388b5d59
+  m_configObjects:
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 24aecdb4058f50a40b0108b3f26098de, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 793a1481ba0234444b81013281f2dec6, type: 2}
+  m_UseUCBPForAssetBundles: 0

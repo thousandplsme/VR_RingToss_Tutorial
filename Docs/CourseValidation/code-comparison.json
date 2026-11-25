@@ -1,0 +1,22 @@
+[
+  {
+    "script": "RingScoreDisplay",
+    "notionMatches": true,
+    "validationMatches": true
+  },
+  {
+    "script": "PlaceRingAtStart",
+    "notionMatches": true,
+    "validationMatches": true
+  },
+  {
+    "script": "RingScore",
+    "notionMatches": true,
+    "validationMatches": true
+  },
+  {
+    "script": "RingPracticeControls",
+    "notionMatches": true,
+    "validationMatches": true
+  }
+]

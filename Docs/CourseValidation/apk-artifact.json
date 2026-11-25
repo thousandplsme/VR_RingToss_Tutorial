@@ -1,0 +1,11 @@
+{
+  "name": "05_RingToss.apk",
+  "bytes": 45189517,
+  "lastWriteTime": "2026-10-22T22:26:25.0385238+09:00",
+  "sha256": "D4B3E1A778E4284073EA67D029E526876A1DEA6C573DDE9458EB59C0C4D8C163",
+  "package": "com.vrclub.ringtoss.validation",
+  "sdkMin": 29,
+  "sdkTarget": 36,
+  "architecture": "arm64-v8a",
+  "deviceTested": false
+}

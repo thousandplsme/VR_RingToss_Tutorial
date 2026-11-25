@@ -1,0 +1,16 @@
+var scene=UnityEngine.SceneManagement.SceneManager.GetActiveScene();
+if(scene.path!="Assets/RingTossTutorial/Scenes/RingToss_v0_1.unity" || scene.isDirty || EditorApplication.isPlaying) throw new System.Exception("Expected clean tutorial scene in Edit mode.");
+var ring=GameObject.Find("Ring");
+var grab=ring.GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
+Undo.RecordObject(grab,"Configure ring grab transformer");
+var transformer=ring.GetComponent<UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer>();
+if(transformer==null) transformer=Undo.AddComponent<UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer>(ring);
+Undo.RecordObject(transformer,"Keep ring size fixed");
+transformer.allowOneHandedScaling=false;
+transformer.allowTwoHandedScaling=false;
+grab.startingSingleGrabTransformers=new List<UnityEngine.XR.Interaction.Toolkit.Transformers.XRBaseGrabTransformer>{transformer};
+grab.addDefaultGrabTransformers=false;
+EditorUtility.SetDirty(grab); EditorUtility.SetDirty(transformer);
+UnityEditor.SceneManagement.EditorSceneManager.MarkSceneDirty(scene);
+if(!UnityEditor.SceneManagement.EditorSceneManager.SaveScene(scene)) throw new System.Exception("Save failed.");
+return new {saved=!scene.isDirty,transformer=transformer.GetType().FullName,grab.addDefaultGrabTransformers,transformer.allowOneHandedScaling,transformer.allowTwoHandedScaling};

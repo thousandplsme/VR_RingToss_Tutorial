@@ -1,0 +1,71 @@
+{
+  "method": "Play-mode ManualValue XRI reader; tracked pose disabled temporarily; return method invoked directly; no physical A button or head-tracking validation",
+  "results": [
+    {
+      "hand": "Left Controller",
+      "passed": true,
+      "rejectedOnRelease": true,
+      "heldReturnRejected": true,
+      "returned": true,
+      "positionCorrect": true,
+      "stopped": true,
+      "repeated": true,
+      "verticalRejected": true,
+      "gravityAfterThrow": true,
+      "hovered": true,
+      "selected": true,
+      "liftedY": 1.02389491,
+      "released": true,
+      "floorY": 0.0250000041,
+      "releaseVelocity": [
+        0.2384865,
+        -0.279877484,
+        1.754646
+      ],
+      "releaseAngularVelocity": [
+        6.453959E-14,
+        2.10656619,
+        2.93901662E-14
+      ],
+      "postReleaseDisplacement": [
+        0.0906248242,
+        -0.5536892,
+        0.6667659
+      ],
+      "gravity": false
+    },
+    {
+      "hand": "Right Controller",
+      "passed": true,
+      "rejectedOnRelease": true,
+      "heldReturnRejected": true,
+      "returned": true,
+      "positionCorrect": true,
+      "stopped": true,
+      "repeated": true,
+      "verticalRejected": true,
+      "gravityAfterThrow": true,
+      "hovered": true,
+      "selected": true,
+      "liftedY": 1.01894391,
+      "released": true,
+      "floorY": 0.025,
+      "releaseVelocity": [
+        0.23645322,
+        -0.283729732,
+        1.74143565
+      ],
+      "releaseAngularVelocity": [
+        1.43303839E-13,
+        2.09049439,
+        3.86927686E-13
+      ],
+      "postReleaseDisplacement": [
+        0.0898521841,
+        -0.555152833,
+        0.6617446
+      ],
+      "gravity": false
+    }
+  ]
+}

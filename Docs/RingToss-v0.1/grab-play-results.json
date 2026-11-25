@@ -1,0 +1,55 @@
+{
+  "method": "Play-mode ManualValue XRI reader; tracked pose disabled temporarily; no hardware Input System validation",
+  "results": [
+    {
+      "hand": "Left Controller",
+      "passed": true,
+      "hovered": true,
+      "selected": true,
+      "liftedY": 1.02190566,
+      "released": true,
+      "floorY": 0.0249999538,
+      "releaseVelocity": [
+        0.239703149,
+        -0.279995918,
+        1.752985
+      ],
+      "releaseAngularVelocity": [
+        9.826864E-13,
+        2.10607123,
+        2.40982885E-12
+      ],
+      "postReleaseDisplacement": [
+        0.09588122,
+        -0.622118,
+        0.7011938
+      ],
+      "gravity": true
+    },
+    {
+      "hand": "Right Controller",
+      "passed": true,
+      "hovered": true,
+      "selected": true,
+      "liftedY": 1.02470136,
+      "released": true,
+      "floorY": 0.0249999985,
+      "releaseVelocity": [
+        0.239385992,
+        -0.2789216,
+        1.75753093
+      ],
+      "releaseAngularVelocity": [
+        1.571314E-13,
+        2.1105547,
+        3.96636581E-13
+      ],
+      "postReleaseDisplacement": [
+        0.09096666,
+        -0.5533258,
+        0.6678622
+      ],
+      "gravity": true
+    }
+  ]
+}

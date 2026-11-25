@@ -1,0 +1,65 @@
+{
+  "scene": "Assets/RingTossTutorial/Scenes/RingToss_v0_1.unity",
+  "isDirty": true,
+  "ringPosition": "(0.00, 0.03, 0.65)",
+  "grab": {
+    "enabled": true,
+    "selectMode": "Single",
+    "movementType": "VelocityTracking",
+    "trackPosition": true,
+    "trackRotation": true,
+    "useDynamicAttach": true,
+    "attachEaseInTime": 0.15,
+    "throwOnDetach": true,
+    "throwSmoothingDuration": 0.25,
+    "throwVelocityScale": 1.0,
+    "throwAngularVelocityScale": 1.0,
+    "forceGravityOnDetach": false,
+    "addDefaultGrabTransformers": false,
+    "transformers": [
+      "XRGeneralGrabTransformer"
+    ],
+    "colliders": 16,
+    "layers": 1
+  },
+  "rigidbody": {
+    "mass": 0.15,
+    "useGravity": true,
+    "isKinematic": false,
+    "interpolation": "Interpolate",
+    "collision": "ContinuousDynamic"
+  },
+  "transformer": {
+    "allowOneHandedScaling": false,
+    "allowTwoHandedScaling": false,
+    "axes": "All"
+  },
+  "hands": [
+    {
+      "name": "Left Controller",
+      "enabled": true,
+      "trigger": "StateChange",
+      "inputMode": "InputActionReference",
+      "select": "XRI Left Interaction/Select",
+      "value": "Select Value",
+      "layers": -1,
+      "improveAccuracyWithSphereCollider": true,
+      "radius": 0.08,
+      "isTrigger": true,
+      "trackingEnabled": true
+    },
+    {
+      "name": "Right Controller",
+      "enabled": true,
+      "trigger": "StateChange",
+      "inputMode": "InputActionReference",
+      "select": "XRI Right Interaction/Select",
+      "value": "Select Value",
+      "layers": -1,
+      "improveAccuracyWithSphereCollider": true,
+      "radius": 0.08,
+      "isTrigger": true,
+      "trackingEnabled": true
+    }
+  ]
+}

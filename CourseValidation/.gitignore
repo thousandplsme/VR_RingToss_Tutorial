@@ -1,0 +1,9 @@
+/VRRT/Library/
+/VRRT/Temp/
+/VRRT/Logs/
+/VRRT/obj/
+/VRRT/Builds/
+/VRRT/UserSettings/
+/VRRT/.vs/
+/VRRT/*.csproj
+/VRRT/*.sln
